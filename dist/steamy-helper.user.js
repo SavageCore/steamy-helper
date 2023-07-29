@@ -4,6 +4,7 @@
 // @downloadURL		https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js
 // @updateURL		https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js
 // @match			https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsesort=mysubscriptions*
+// @match			https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsefilter=mysubscriptions*
 // @name			steamy-helper
 // @version			0.1.0
 // @description		This userscript adds import/export functionality to your subscribed mods list on the Steam Workshop.
