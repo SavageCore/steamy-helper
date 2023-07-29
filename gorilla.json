@@ -3,6 +3,6 @@
 	"downloadURL": "https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js",
 	"updateURL": "https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js",
 	"match": [
-		"https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsesort=mysubscriptions"
+    "https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsesort=mysubscriptions*"
 	]
 }

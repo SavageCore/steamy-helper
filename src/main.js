@@ -75,6 +75,9 @@ if (exportRunning) {
             <textarea id="scExportModalTextarea" style="width: 100%; height: 200px;">${markdownTable}</textarea>
             <button id="scExportModalCopyButton" style="margin-top: 10px;">Copy (JSON)</button>
             <button id="scExportModalCloseButton" style="margin-top: 10px;">Close</button>
+            <div style="margin-top: 10px; font-size: 12px;">
+              <a href="https://github.com/SavageCore/steamy-helper" target="_blank">Steamy helper</a>
+            </div>
           </div>
         </div>`
     document.body.insertAdjacentHTML('beforeend', modalHtml)
@@ -156,6 +159,9 @@ importModalButton.addEventListener('click', () => {
 
             <button id="scImportModalButton" style="margin-top: 10px;">Import</button>
             <button id="scImportModalCloseButton" style="margin-top: 10px;">Close</button>
+            <div style="margin-top: 10px; font-size: 12px;">
+              <a href="https://github.com/SavageCore/steamy-helper" target="_blank">Steamy helper</a>
+            </div>
           </div>
         </div>`
   document.body.insertAdjacentHTML('beforeend', modalHtml)
@@ -184,6 +190,9 @@ importModalButton.addEventListener('click', () => {
               <table id="scSubscribeModalTable" style="width: 100%;"></table>
               <button id="scSubscribeModalSubscribeButton" style="margin-top: 10px;">Subscribe</button>
               <button id="scSubscribeModalCloseButton" style="margin-top: 10px;">Close</button>
+              <div style="margin-top: 10px; font-size: 12px;">
+                <a href="https://github.com/SavageCore/steamy-helper" target="_blank">Steamy helper</a>
+              </div>
             </div>
           </div>`
 

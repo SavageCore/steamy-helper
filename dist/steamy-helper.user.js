@@ -3,7 +3,7 @@
 // @namespace		savagecore.uk
 // @downloadURL		https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js
 // @updateURL		https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js
-// @match			https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsesort=mysubscriptions
+// @match			https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsesort=mysubscriptions*
 // @name			steamy-helper
 // @version			0.1.0
 // @description		This userscript adds import/export functionality to your subscribed mods list on the Steam Workshop.
@@ -16,6 +16,8 @@
 
 (function () {
   'use strict';
+
+  const version = '0.1.0';
 
   // Add a import and export buttons
   const targetElements = document.querySelectorAll('.menu_panel');
@@ -94,6 +96,9 @@
             <textarea id="scExportModalTextarea" style="width: 100%; height: 200px;">${markdownTable}</textarea>
             <button id="scExportModalCopyButton" style="margin-top: 10px;">Copy (JSON)</button>
             <button id="scExportModalCloseButton" style="margin-top: 10px;">Close</button>
+            <div style="margin-top: 10px; font-size: 12px;">
+              Powered by <a href="https://github.com/SavageCore/steamy-helper" target="_blank">Steamy helper</a> v${version}
+            </div>
           </div>
         </div>`;
       document.body.insertAdjacentHTML('beforeend', modalHtml);
@@ -175,6 +180,9 @@
 
             <button id="scImportModalButton" style="margin-top: 10px;">Import</button>
             <button id="scImportModalCloseButton" style="margin-top: 10px;">Close</button>
+            <div style="margin-top: 10px; font-size: 12px;">
+              Powered by <a href="https://github.com/SavageCore/steamy-helper" target="_blank">Steamy helper</a> v${version}
+            </div>
           </div>
         </div>`;
     document.body.insertAdjacentHTML('beforeend', modalHtml);
@@ -203,6 +211,9 @@
               <table id="scSubscribeModalTable" style="width: 100%;"></table>
               <button id="scSubscribeModalSubscribeButton" style="margin-top: 10px;">Subscribe</button>
               <button id="scSubscribeModalCloseButton" style="margin-top: 10px;">Close</button>
+              <div style="margin-top: 10px; font-size: 12px;">
+                Powered by <a href="https://github.com/SavageCore/steamy-helper" target="_blank">Steamy helper</a> v${version}
+              </div>
             </div>
           </div>`;
 
