@@ -1,6 +1,6 @@
 const version = '0.1.0'
 
-// Add a import and export buttons
+// Add import and export buttons
 const targetElements = document.querySelectorAll('.menu_panel')
 
 const exportButtonHtml = `
