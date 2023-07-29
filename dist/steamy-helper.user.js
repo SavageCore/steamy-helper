@@ -124,12 +124,16 @@
       window.addEventListener('click', (event) => {
         if (event.target === modal) {
           modal.style.display = 'none';
+          modal.remove();
+          localStorage.removeItem('sc_exportText');
         }
       });
 
       // On click, close the modal
       closeButton.addEventListener('click', () => {
         modal.style.display = 'none';
+        modal.remove();
+        localStorage.removeItem('sc_exportText');
       });
 
       // On click, select the text
@@ -336,12 +340,14 @@
         window.addEventListener('click', (event) => {
           if (event.target === modal) {
             modal.style.display = 'none';
+            modal.remove();
           }
         });
 
         // On click button, close the modal
         closeButton.addEventListener('click', () => {
           modal.style.display = 'none';
+          modal.remove();
         });
       }
     });
@@ -350,12 +356,14 @@
     window.addEventListener('click', (event) => {
       if (event.target === modal) {
         modal.style.display = 'none';
+        modal.remove();
       }
     });
 
     // On click button, close the modal
     closeButton.addEventListener('click', () => {
       modal.style.display = 'none';
+      modal.remove();
     });
   });
 
