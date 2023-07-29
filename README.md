@@ -3,6 +3,12 @@
 > This userscript adds import/export functionality to your subscribed mods list
 > on the Steam Workshop.
 
+![brave_y9eoeFTpjB](https://github.com/SavageCore/steamy-helper/assets/171312/699e4099-4f32-4e22-bf69-6c4ba2982ade)
+
+![brave_ztjg0UMTR7](https://github.com/SavageCore/steamy-helper/assets/171312/92a59f38-6447-4f6d-92a8-dc66e23ef4f0)
+
+![JcqOHzFpEJ](https://github.com/SavageCore/steamy-helper/assets/171312/32fa3e0c-5e91-4d4d-9b75-c3424ee6794e)
+
 ## Installation
 
 1. Install a userscript manager like [Greasemonkey](https://www.greasespot.net/)
@@ -10,6 +16,20 @@
 2. Click
    [here](https://github.com/SavageCore/steamy-helper/raw/main/dist/steamy-helper.user.js)
    to install the script.
+
+## Usage
+
+1. Visit your subscriptions page ([Workshop](https://steamcommunity.com/app/289070/workshop/) -> Your files -> Your subscribed items
+
+### Exporting
+1. Click Export Subscribed and wait for the pop-up
+2. Click copy JSON and save it somewhere like [gist](https://gist.github.com) for sharing/backup.
+
+### Importing
+1. Click Import Subscribed
+2. Paste in your previously exported JSON
+3. Click Import
+4. Scroll to the bottom and click Subscribe
 
 ## Features
 
