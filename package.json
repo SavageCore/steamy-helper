@@ -1,6 +1,6 @@
 {
   "name": "steamy-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This userscript adds import/export functionality to your subscribed mods list on the Steam Workshop.",
   "license": "Unlicense",
   "author": "SavageCore",

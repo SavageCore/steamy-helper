@@ -6,7 +6,7 @@
 // @match			https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsesort=mysubscriptions*
 // @match			https://steamcommunity.com/id/*/myworkshopfiles/?appid=*&browsefilter=mysubscriptions*
 // @name			steamy-helper
-// @version			0.1.0
+// @version			0.1.1
 // @description		This userscript adds import/export functionality to your subscribed mods list on the Steam Workshop.
 // @author			SavageCore
 // @homepage		https://github.com/SavageCore/steamy-helper#readme
@@ -18,7 +18,7 @@
 (function () {
   'use strict';
 
-  const version = '0.1.0';
+  const version = '0.1.1';
 
   // Add import and export buttons
   const targetElements = document.querySelectorAll('.menu_panel');
