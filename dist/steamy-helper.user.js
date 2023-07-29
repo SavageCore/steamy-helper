@@ -92,7 +92,7 @@
         <div id="scExportModal" style="display: none; position: fixed; z-index: 99; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4);">
           <div style="background-color: #273b52; margin: 15% auto; padding: 20px; border: 1px solid #8F98A0; width: 80%;">
             <h2>Export</h2>
-            <p>Copy the JSON and share somewhere like <a href="https://gist.github.com/" target="_blank">gist</a> for others to import or you can share the Markdown below for humans to read.</p>
+            <p>Copy the JSON and share somewhere like <a href="https://gist.github.com/" target="_blank">gist</a> for others to import or you can share the Markdown below for humans to read at <a href="https://rentry.co/">Rentry</a>.</p>
             <textarea id="scExportModalTextarea" style="width: 100%; height: 200px;">${markdownTable}</textarea>
             <button id="scExportModalCopyButton" style="margin-top: 10px;">Copy (JSON)</button>
             <button id="scExportModalCloseButton" style="margin-top: 10px;">Close</button>
@@ -129,6 +129,12 @@
       // On click, close the modal
       closeButton.addEventListener('click', () => {
         modal.style.display = 'none';
+      });
+
+      // On click, select the text
+      const textarea = document.querySelector('#scExportModalTextarea');
+      textarea.addEventListener('click', () => {
+        textarea.select();
       });
     }
   }
