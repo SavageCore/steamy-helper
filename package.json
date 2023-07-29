@@ -1,0 +1,39 @@
+{
+  "name": "steamy-helper",
+  "version": "0.1.0",
+  "description": "This userscript adds import/export functionality to your subscribed mods list on the Steam Workshop.",
+  "license": "Unlicense",
+  "author": "SavageCore",
+  "homepage": "https://github.com/SavageCore/steamy-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SavageCore/steamy-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SavageCore/steamy-helper/issues"
+  },
+  "main": "main.js",
+  "scripts": {
+    "build": "gorilla --input ./src/main.js --output ./dist/steamy-helper.user.js --config gorilla.json",
+    "dev": "watch -p \"./src/**/*.js\" -c \"npm run build\"",
+    "lint": "standard",
+    "test": "npm run lint"
+  },
+  "dependencies": {
+    "watch-cli": "^0.2.3"
+  },
+  "devDependencies": {
+    "gorilla-build": "^0.1.16",
+    "standard": "^17.1.0"
+  },
+  "standard": {
+    "globals": [
+      "localStorage",
+      "location",
+      "DOMParser"
+    ],
+    "ignore": [
+      "/dist/**/*"
+    ]
+  }
+}
